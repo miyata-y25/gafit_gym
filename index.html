@@ -96,7 +96,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="sec__ttl__en">NEWS</span>
     </h2>
     <ul class="news-list">
-        <li><time datetime="2025-03-01">2025.03.01</time><a href="news/detail.html">WEBサイトをリニューアルしました。</a></li>
+        <!-- <li><time datetime="2025-03-01">2025.03.01</time><a href="news/detail.html">WEBサイトをリニューアルしました。</a></li> -->
+        <li><time datetime="2025-03-01">2025.03.01</time><span>WEBサイトをリニューアルしました。</span></li>
     </ul>
     <p class="news-more"><a href="news/">READ MORE</a></p>
 </section>
@@ -588,7 +589,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </dl>
                     </div>
                     <div class="swiper-slide lineup-list__list">
-                        <figure class="lineup-thum"><img src="assets/img/top/lineup_img03_12.png" alt=""></figure>
+                        <figure class="lineup-thum"><img src="assets/img/top/lineup_img03_13.png" alt=""></figure>
                         <h5 class="lineup-ttl">レバレッジ デッドリフトシュラッグ</h5>
                         <p class="lineup-txt">広背筋上部と下部及び僧帽筋を鍛えることができます。バーベルではできない左右独立した動きが可能です。</p>
                         <dl class="lineup-dl">
@@ -733,12 +734,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="studio-area">
             <h3 class="studio-area__ttl">スタジオプログラム一覧</h3>
             <ul class="studio-area__list">
-                <li class="slider-jump01">FIGHT DO（ファイドウ）</li>
-                <li class="slider-jump02">UBOUND（ユーバウンド）</li>
-                <li class="slider-jump03">RADICAL YOGA（ラディカルヨガ）</li>
-                <li class="slider-jump04">OXIGENO（オキシジェノ）</li>
-                <li class="slider-jump05">MEGA DANZ（メガダンス）</li>
-                <li class="slider-jump06">RADICAL AERO（ラディカルエアロ）</li>
+                <li class="slider-jump01">BODYPUMP</li>
+                <li class="slider-jump02">BODYCOMBAT</li>
+                <li class="slider-jump03">BODYATTACK</li>
+                <li class="slider-jump04">BODYSTEP</li>
+                <li class="slider-jump05">BODYBALANCE</li>
+                <li class="slider-jump06">BODYJAM</li>
+                <li class="slider-jump07">LESMILLS DANCE</li>
+                <li class="slider-jump08">LESMILLS CORE</li>
             </ul>
         </div>
         <p class="studio-read">画像をクリックすると動画が再生されます</p>
@@ -752,7 +755,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <li class="swiper-slide studio-list__list">
                     <figure class="studio-thum"><a href="https://www.youtube.com/embed/dOUfz_DdkFk?si=EEgvT1VlXbxG8Kcd" target="_blank"><img src="http://img.youtube.com/vi/dOUfz_DdkFk/mqdefault.jpg" alt=""></a></figure>
                     <h4 class="studio-ttl"><img src="assets/img/top/studio_logo02.png" alt=""></h4>
-                    <p class="studio-txt">UBOUND(ユーバウンド)空手、ボクシング、テコンドーなど様々な格闘技の動きを取り入れたワークアウトは、難しい動きは一切なし。仮想の相手にパンチやキックする時に意識して身体をひねることで、腹筋運動と同じ効果に期待ができます。楽しい時間を過ごしながら、ストレスも発散できます。</p>
+                    <p class="studio-txt">空手、ボクシング、テコンドーなど様々な格闘技の動きを取り入れたワークアウトは、難しい動きは一切なし。仮想の相手にパンチやキックする時に意識して身体をひねることで、腹筋運動と同じ効果に期待ができます。楽しい時間を過ごしながら、ストレスも発散できます。</p>
                 </li>
                 <li class="swiper-slide studio-list__list">
                     <figure class="studio-thum"><a href="https://www.youtube.com/embed/NtPeJcAFlrE?si=PCWDQp1xNWeiz330" target="_blank"><img src="http://img.youtube.com/vi/NtPeJcAFlrE/mqdefault.jpg" alt=""></a></figure>
@@ -1502,6 +1505,12 @@ $('.slider-jump05').on('click', function() {
 });
 $('.slider-jump06').on('click', function() {
     $('.studio-list').slick('slickGoTo', 5, false);
+});
+$('.slider-jump07').on('click', function() {
+    $('.studio-list').slick('slickGoTo', 6, false);
+});
+$('.slider-jump08').on('click', function() {
+    $('.studio-list').slick('slickGoTo', 7, false);
 });
 </script>
 
