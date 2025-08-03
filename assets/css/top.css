@@ -253,13 +253,22 @@
 @media screen and (min-width: 769px) {
   .instructor-list {
     margin: 0 auto;
-    max-width: 840px;
+    max-width: 1440px;
+    width: 80%;
   }
 }
 .instructor-list .slick-arrow {
   display: none !important;
 }
+.instructor-list .slick-track {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 .instructor-list__li {
+  float: none !important;
+  height: auto !important;
   background: #FFF;
   padding: 2em 2em;
   border-radius: 1em;
@@ -308,6 +317,11 @@
   margin-top: 1.5em;
   font-weight: 500;
 }
+@media screen and (min-width: 769px) {
+  .instructor-list__li .read {
+    font-size: 1em;
+  }
+}
 
 .slick-dots {
   display: -webkit-box !important;
@@ -319,9 +333,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 1em;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 0 20px;
 }
 .slick-dots li {
-  margin: 0 1em;
+  margin: 0 0.5em;
 }
 .slick-dots li button {
   width: 10px;
@@ -729,7 +747,7 @@
   }
 }
 .yourself-sec__ttl {
-  font-size: 3em;
+  font-size: 2.8125em;
   text-align: center;
   margin-bottom: 1em;
   font-family: "Poppins", sans-serif;
@@ -737,7 +755,7 @@
 }
 @media screen and (max-width: 640px) {
   .yourself-sec__ttl {
-    font-size: 2em;
+    font-size: 1.875em;
   }
 }
 .yourself-sec__ttl span {
@@ -1156,6 +1174,19 @@
   text-align: center;
   margin: 0 0 0.6666666667em;
   font-size: 1.5em;
+  background: #FFF;
+}
+.studio-list__list .studio-ttl:has(span) {
+  padding-top: 16.2475585937%;
+  position: relative;
+}
+.studio-list__list .studio-ttl:has(span) span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 100%;
 }
 .studio-list__list .studio-ttl img {
   width: 50%;
@@ -1212,6 +1243,7 @@
 @media screen and (min-width: 641px) {
   .lineup-list__list .lineup-txt {
     font-size: 1em;
+    height: 9.375em;
   }
 }
 .lineup-list__list .lineup-dl {
@@ -2097,7 +2129,7 @@
 }
 @media screen and (max-width: 640px) {
   .insta-list {
-    width: 100%;
+    width: auto;
   }
 }
 .insta-list li {

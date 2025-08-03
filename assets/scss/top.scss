@@ -251,12 +251,18 @@ body {
     margin: 0 -20px;
     @include min-screen($screen-sm + 1) {
         margin: 0 auto;
-        max-width: 840px;
+        max-width: 1440px;
+        width: 80%;
     }
     .slick-arrow {
         display: none !important;
     }
+    .slick-track {
+        display: flex;
+    }
     &__li {
+        float: none !important;
+        height: auto !important;
         background: #FFF;
         padding: 2em 2em;
         border-radius: 1em;
@@ -302,6 +308,9 @@ body {
             font-size: (22em/16);
             margin-top: 1.5em;
             font-weight: 500;
+            @include min-screen($screen-sm + 1) {
+                font-size: (16em/16);
+            }
         }
     }
 }
@@ -310,8 +319,10 @@ body {
     display: flex !important;
     justify-content: center;
     margin-top: 1em;
+    flex-wrap: wrap;
+    padding: 0 20px;
     li {
-        margin: 0 1em;
+        margin: 0 0.5em;
         button {
             width: 10px;
             height: 10px;
@@ -685,13 +696,13 @@ body {
         padding: 3em 20px;
     }
     &__ttl {
-        font-size: (48em/16);
+        font-size: (45em/16);
         text-align: center;
         margin-bottom: 1em;
         font-family: $Poppins-font;
         color: #FFF;
         @include max-screen($screen-xs) {
-            font-size: (32em/16);
+            font-size: (30em/16);
         }
         span {
             color: #FFF;
@@ -1037,6 +1048,18 @@ body {
             text-align: center;
             margin: 0 0 (12em/18);
             font-size: (18em/12);
+            background: #FFF;
+            &:has(span) {
+                padding-top: percentage(66.55/(1280*0.32));
+                position: relative;
+                span {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translate(0,-50%);
+                    width: 100%;
+                }
+            }
             img {
                 width: 50%;
                 margin: 0 auto;
@@ -1087,6 +1110,7 @@ body {
             padding: 0 0 1em;
             @include min-screen($screen-xs + 1) {
                 font-size: (16em/16);
+                height: (150em/16);
             }
         }
         .lineup-dl {
@@ -1819,7 +1843,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     @include max-screen($screen-xs) {
-        width: 100%;
+        width: auto;
     }
     li {
         width: 50%;
