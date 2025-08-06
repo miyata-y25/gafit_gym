@@ -1475,6 +1475,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    &:after {
+        content: "";
+        width: 31%;
+    }
     @include max-screen($screen-xs) {
         width: 100%;
     }

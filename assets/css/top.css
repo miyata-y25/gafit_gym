@@ -1665,6 +1665,10 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.others-list:after {
+  content: "";
+  width: 31%;
+}
 @media screen and (max-width: 640px) {
   .others-list {
     width: 100%;
