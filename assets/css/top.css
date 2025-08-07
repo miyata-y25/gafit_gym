@@ -281,6 +281,9 @@
   width: 10em;
   margin: 0 auto 1em;
 }
+.instructor-list__li figure img {
+  height: auto;
+}
 .instructor-list__li .info {
   text-align: center;
 }
@@ -721,8 +724,8 @@
   padding: 0 0.25em 0.25em;
 }
 .news-more a:hover {
-  color: #B7D100;
-  border-color: #B7D100;
+  color: #ff9c00;
+  border-color: #ff9c00;
 }
 .news-more.--wt a {
   color: #FFF;
